@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hitung Skor"
+        android:textAllCaps="true"
+        android:padding="20px"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/dark_blue"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <TextView
+                android:id="@+id/txt_first_team"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Team A"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/score_first_team"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="21"
+                android:textColor="@android:color/white"
+                android:textSize="60sp" />
+
+            <Button
+                android:id="@+id/three_point_first_team"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:text="3 point"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/two_point_first_team"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:text="2 point"
+                android:textAllCaps="false" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <TextView
+                android:id="@+id/txt_second_team"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Team B"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/score_second_team"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="20"
+                android:textColor="@android:color/white"
+                android:textSize="60sp" />
+
+            <Button
+                android:id="@+id/two_point_second_team"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:text="2 point"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/three_point_second_team"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:text="3 point"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="Finish"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tombolUpdate"
+            android:text="Update"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="3dp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
